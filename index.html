@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/favicon-portfolio.png" type="image/x-icon">
+    <!-- main css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- file of normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- file of Awesome Library for icon -->
+    <link rel="stylesheet" href="css/all.min.css" />    <link rel="shortcut icon" href="./images/favicon-portfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>My Portfolio</title>
+    <link
+        rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+        <title>WP1</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -35,9 +42,9 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav id="navbar" class="black navbar navbar-expand-lg fixed-top">
+    <nav id="navbar" class="black navbar navbar-expand-lg fixed-top container rounded-xl">
         <!-- Brand -->
-        <a id="nav-logo" class="navbar-brand" href="index.html">Mubeen</a>
+        <a id="nav-logo" class="navbar-brand" href="index.html">WP1</a>
 
         <!-- Button collapsable -->
         <button class="navbar-toggler" id="nav-btn" type="button" data-toggle="collapse"
@@ -46,7 +53,8 @@
         </button>
         <!-- Links -->
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul id="nav-ul" class="navbar-nav">
+            <hr class="hr">
+            <ul id="nav-ul" class="navbar-nav gap-3">
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="index.html">Home</a>
                 </li>
@@ -54,7 +62,7 @@
                     <a class="nav-link nav-custom-link" href="#about-me">About</a>
                 </li>
                 <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#my-portfolio">Portfolio</a>
+                    <a class="nav-link nav-custom-link" href="#my-projects">Projects</a>
                 </li>
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="#section-contact">Contact</a>
@@ -69,7 +77,12 @@
         <section class="container-fluid section-1">
             <div class="row section-1-inner">
                 <div class="col section-1-inner-col">
-                    <div class="image-frame mx-auto my-5">
+                    <!-- <div class="image-frame mx-auto my-5">
+                    </div> -->
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="/images/avatar.png" alt="avatar" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,11 +97,17 @@
                         Creative <span class="fw-bold primary-heading-bold">Work</span>
                     </div>
                     <div class="paragraph mx-auto mt-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae debitis velit maxime
-                        facilis quae maiores optio ut eveniet, aspernatur, cupiditate saepe consequuntur cumque
-                        distinctio, error itaque ipsum sunt assumenda!
+                        My portfolio is a window into your creativity, 
+                        showcasing my best work and unique style. 
+                        It tells the story of my skills and passion, 
+                        inviting viewers to explore my artistic journey.
                     </div>
-                    <a type="button" class="section-2-button fw-bold">Read More</a>
+                    <div class="scroll-icon-box">
+                        <a href="#about-me" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,7 +118,7 @@
             <div class="row section-3-inner">
                 <div class="col-lg-6 section-3-inner-col-left text-center">
                     <div class="primary-heading section-3-heading text-lg-end">
-                        I Am <span class="fw-bold">Designer</span>
+                        I am a <span class="fw-bold">Developer</span>
                     </div>
                     <div class="section-3-image-left text-lg-end">
                         <img src="./images/Section-3-image-1.jpg" class="img-fluid sec3-images sec3-img-left" alt="">
@@ -110,7 +129,7 @@
                         <img src="./images/Section-3-image-2.jpg" class="img-fluid sec3-images sec3-img-right" alt="">
                     </div>
                     <div class="section-3-button-right text-lg-start">
-                        <button class="sec3-btn-right text-uppercase fw-bold" onclick="location.href='#'">
+                        <button class="sec3-btn-right text-uppercase fw-bold" onclick="window.location='/about.html'">
                             Read More
                         </button>
                     </div>
@@ -134,14 +153,15 @@
                     <div class="section-4-right text-center text-lg-start">
                         <div class="sec4-blank"></div>
                         <div class="sec4-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est dolor iure voluptates.
-                            Facere nostrum porro, velit veniam, architecto veritatis, libero a repellat quod quas atque
-                            totam accusamus obcaecati delectus dicta! Suscipit ratione qui, nihil voluptates error
-                            distinctio optio doloremque?
+                            I showcase my expertise in crafting innovative
+                            web solutions. From sleek designs to robust code,
+                            I create digital experiences that are both
+                            functional and captivating. 🚀
                         </div>
                         <div class="section-4-button">
-                            <button class="sec4-btn text-uppercase fw-bold" onclick="location.href='#'">Read
-                                More</button>
+                            <button class="sec4-btn text-uppercase fw-bold" onclick="location.href='/about.html'">
+                                Read More
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -151,13 +171,12 @@
         <!-- Divider -->
         <div class="bold-line"></div>
 
-
         <!-- SECTION NO 5 -->
-        <section id="my-portfolio" class="container-fluid section-5">
+        <section id="my-projects" class="container-fluid section-5">
             <div class="row">
                 <div class="col">
                     <div class="section-5-text text-center mx-auto">
-                        We Design People Inspired Experiences That Create Positive Change In People's Lives.
+                        We Design and Develop People Inspired Experiences That Create Positive Change In People's Lives.
                     </div>
                     <div class="section-5-icon text-center">
                         <i class="bi bi-chevron-double-down sec5-icon"></i>
@@ -167,7 +186,7 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="sec5-portfolio-head">
-                        View Portfolio
+                        My Projects
                     </div>
                 </div>
             </div>
@@ -176,236 +195,88 @@
                 <div class="masonry">
                     <!-- Work 1 -->
                     <div class="grid">
-                        <img src="./images/work-1.jpg" class="img-fluid image-work">
+                        <img src="./images/Manrah.png" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
+                                <a class="grid__link" target="_blank" href="https://manarah-al-abtkar.vercel.app"></a>
+                                <span class="grid__tag">BY Louay Deeb</span>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 1</span>
+                                <span class="grid__tag">#Manarah Al-Abtkar</span>
                             </div>
                         </div>
                     </div>
                     <!-- Work 2 -->
                     <div class="grid">
-                        <img src="./images/work-2.jpg" class="img-fluid image-work">
+                        <img src="./images/Portfolio.png" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
+                                <a class="grid__link" target="_blank" href="https://protfolio-louay-05.vercel.app"></a>
+                                <span class="grid__tag">BY Louay Deeb</span>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 2</span>
+                                <span class="grid__tag">#My Portfolio</span>
                             </div>
                         </div>
                     </div>
                     <!-- Work 3 -->
                     <div class="grid">
-                        <img src="./images/work-3.jpg" class="img-fluid image-work">
+                        <img src="./images/Blog.png" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
+                                <a class="grid__link" target="_blank" href="https://blog-louay-05.vercel.app"></a>
+                                <span class="grid__tag">BY Louay Deeb</span>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 3</span>
+                                <span class="grid__tag">#Blog</span>
                             </div>
                         </div>
                     </div>
                     <!-- Work 4 -->
                     <div class="grid">
-                        <img src="./images/work-4.jpg" class="img-fluid image-work">
+                        <img src="./images/Mark_2.png" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
+                                <a class="grid__link" target="_blank" href="https://mark-louay.vercel.app"></a>
+                                <span class="grid__tag">BY Louay Deeb</span>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 4</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 5 -->
-                    <div class="grid">
-                        <img src="./images/work-5.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 5</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 6 -->
-                    <div class="grid">
-                        <img src="./images/work-6.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 6</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 7 -->
-                    <div class="grid">
-                        <img src="./images/work-7.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 7</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 8 -->
-                    <div class="grid">
-                        <img src="./images/work-8.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 8</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 9 -->
-                    <div class="grid">
-                        <img src="./images/work-9.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 9</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 10 -->
-                    <div class="grid">
-                        <img src="./images/work-10.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 9</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 11 -->
-                    <div class="grid">
-                        <img src="./images/work-11.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 9</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work 12 -->
-                    <div class="grid">
-                        <img src="./images/work-12.jpg" class="img-fluid image-work">
-                        <div class="grid__body">
-                            <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
-                                <p class="grid__author">BY Mubeen Ahmad</p>
-                            </div>
-                            <div class="mt-auto">
-                                <span class="grid__tag">#Work 9</span>
+                                <span class="grid__tag">#Mark</span>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider_2"></div>
+
+            <!-- carousel -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="item active">
+                        <img src="./images/Manrah.png" class="img-fluid image-work">
+                    </div>
+                    <div class="item">
+                        <img src="./images/Portfolio.png" class="img-fluid image-work">
+                    </div>
+                    <div class="item">
+                        <img src="./images/Blog.png" class="img-fluid image-work">
+                    </div>
+                    <div class="item">
+                        <img src="./images/Mark_2.png" class="img-fluid image-work">
+                    </div>
+                </div>
+                <button class="btn prev">Prev</button>
+                <button class="btn next">Next</button>
+                <div class="dots"></div>
             </div>
 
             <div class="row">
                 <div class="section-5-button mt-4 mt-sm-5 text-center">
-                    <button class="sec5-btn text-uppercase fw-bold" onclick="location.href='#'">View More</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION NO 6 -->
-        <section class="container-fluid section-6">
-            <div class="row section-6-inner mx-auto">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Music Band</span> Website
-                    </div>
-                    <div class="section-6-para">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique iste nesciunt repellendus!
-                        Nulla, quod voluptatum consequuntur ipsa minus perferendis, incidunt repellendus est dolores
-                        animi tempora adipisci. Perferendis, doloremque ab autem amet possimus commodi voluptate?
-                        Aspernatur.
-                    </div>
-                    <div class="section-6-button">
-                        <a class="sec6-btn text-uppercase fw-bold" onclick="location.href='#'">View Project</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-                    <a href="#"><img src="./images/music-band-website.png" class="img-fluid sec6-image" alt=""></a>
-                </div>
-            </div>
-
-            <div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Coffee Cup</span> Website
-                    </div>
-                    <div class="section-6-para">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, saepe adipisci distinctio
-                        repellendus aliquam pariatur. Reiciendis quam nisi fugiat molestias asperiores. Eius, veritatis?
-                        Corrupti nesciunt aperiam voluptates placeat, libero itaque?
-                    </div>
-                    <div class="section-6-button">
-                        <a class="sec6-btn text-uppercase fw-bold" onclick="location.href='#'">View Project</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-                    <a href="#"><img src="./images/coffee-cup-website.png" class="img-fluid sec6-image" alt=""></a>
-                </div>
-            </div>
-
-            <div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Food Diary</span> Website
-                    </div>
-                    <div class="section-6-para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione sint mollitia dicta
-                        libero illum veniam ut cupiditate quia. Delectus est eveniet quibusdam reiciendis molestias ad
-                        vitae pariatur quis iste, dolores accusamus animi ullam error nesciunt corporis? Sint nisi
-                        soluta ut tempore dignissimos hic voluptatibus autem. Beatae neque iusto impedit dolorem ipsum
-                        rem facere vitae!
-                    </div>
-                    <div class="section-6-button">
-                        <a class="sec6-btn text-uppercase fw-bold" onclick="location.href='#'">View Project</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-                    <a href="#"><img src="./images/food-dairy-website.png" class="img-fluid sec6-image" alt=""></a>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="section-6-button-see-all text-center">
-                    <button class="sec6-btn-see-all text-uppercase fw-bold" onclick="location.href='#'">See All
-                        Projects</button>
+                    <button class="sec5-btn text-uppercase fw-bold" onclick="window.location='/projects.html'">
+                        Read More
+                    </button>
                 </div>
             </div>
         </section>
@@ -431,7 +302,7 @@
                                 <div class="card-circle-icon"><i class="fa fa-map-signs" aria-hidden="true"></i></div>
                             </div>
                             <div class="card-heading">Address</div>
-                            <div class="card-para">Street No ...</div>
+                            <div class="card-para">Tartous City, SY</div>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
@@ -444,8 +315,7 @@
                                 <div class="card-circle-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                             </div>
                             <div class="card-heading">Contact Number</div>
-                            <div class="card-para"><a class="card-link" href="https://wa.me/+92xxxxxxxxxx">+92xxx
-                                    xxxxxxx</div></a>
+                            <div class="card-para"><a class="card-link" href="https://wa.me/+963948911648">+963948911648</div></a>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
@@ -459,7 +329,7 @@
                             </div>
                             <div class="card-heading">Email Address</div>
                             <div class="card-para"><a class="card-link"
-                                    href="mailto:email@example.com">email@example.com</div></a>
+                                    href="mailto:louaydeeb05@gmail.com">louaydeeb05@gmail.com</div></a>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
@@ -472,97 +342,47 @@
                                 <div class="card-circle-icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                             </div>
                             <div class="card-heading">Website</div>
-                            <div class="card-para"><a class="card-link" href="#">yoursite.com</a></div>
+                            <div class="card-para"><a class="card-link" href="https://protfolio-louay-05.vercel.app">protfolio-louay-05</a></div>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
                 </div>
             </div>
-            <div class="row card-row-2">
-                <div class="col-lg-6 contact-image">
-                </div>
-                <div class="col-lg-6 contact-form-div">
-                    <form action="#" class="contact-form">
-                        <div class="form-group mt-3 mt-sm-4">
-                            <input type="text" id="custom-input1" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group mt-3 mt-sm-4">
-                            <input type="text" id="custom-input2" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="form-group mt-3 mt-sm-4">
-                            <input type="text" id="custom-input3" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="form-group mt-3 mt-sm-4">
-                            <textarea name="" id="custom-textarea" cols="30" rows="7" class="form-control"
-                                placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group mt-3 mt-sm-4 form-button">
-                            <input type="submit" value="Send Message" id="contact-custom-button" class="btn">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION NO 7 -->
-        <section class="container-fluid section-7">
-            <div class="row section-7-inner mx-auto text-center">
-                <div class="col">
-                    <div class="section-7-text">
-                        We want to stay in touch with you! Please follow us on social media so we can keep in touch.
-                    </div>
-                    <div class="section-7-icons">
-                        <a href="#" class="social-icons"><i class="bi bi-facebook icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-twitter icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-instagram icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-linkedin icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-pinterest icons"></i></a>
-                    </div>
+             <div class="row" style="margin-bottom: 60px;">
+                <div class="section-5-button mt-4 mt-sm-5 text-center" style="margin-top: 10px !important;">
+                    <button class="sec5-btn text-uppercase fw-bold" onclick="window.location='/contact.html'">
+                        Send a message
+                    </button>
                 </div>
             </div>
         </section>
 
         <!-- SECTION NO 8 -->
-        <footer class="container-fluid footer">
-            <div class="row section-footer-inner mx-auto">
-                <div class="col-sm-4">
-                    <div class="footer-headline">
-                        Headline
-                    </div>
-                    <div class="footer-text">
-                        Sample text
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-5 mt-sm-0">
-                    <div class="footer-headline">
-                        Headline
-                    </div>
-                    <div class="footer-text">
-                        Sample text
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-5 mt-sm-0">
-                    <div class="footer-headline">
-                        Headline
-                    </div>
-                    <div class="footer-text">
-                        Sample text
-                    </div>
-                </div>
-            </div>
+        <footer>
+            <div class="footer">
+            <div class="my-container">
+                <img src="images/L.png" alt="logo" />
+                <h2>we are social</h2>
+                <div class="icons">
+                <a href="https://www.facebook.com/Louay.M.Deeb" target="_blank" style="color: aliceblue;"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
 
-            <!-- Divider -->
-            <hr style="border-bottom: 1px solid #FFFFFF;">
-
-            <div class="row section-footer-inner">
-                <div class="col">
-                    <div class="footer-copyright text-center mt-2">
-                        Footer Text
-                    </div>
+                <a href="https://www.instagram.com/louay_deeb/" target="_blank" style="color: aliceblue;"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/louay-deeb-479540234/" target="_blank" style="color: aliceblue;"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
                 </div>
+                <p>© 2021 <span>WP1</span> All Right Reserved</p>
             </div>
-        </footer>
+            </div>
+        </footer>      
+
+    
+
+
     </main>
 </body>
 
