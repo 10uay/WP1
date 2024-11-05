@@ -13,8 +13,19 @@ $(document).on("scroll", function () {
     $(".hr").removeClass("color-white");
   }
 });
-//
+
 // 
+// Add event listener to close the menu when a link is clicked 
+document.querySelectorAll(".nav-link").forEach(function (link) {
+  link.addEventListener("click", function () {
+    var nav = document.getElementById("collapsibleNavbar");
+    var bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
+    bsCollapse.hide();
+  });
+});
+
+//
+// carousel
 document.addEventListener("DOMContentLoaded", function () {
   let carousel = document.querySelector(".carousel");
   let items = carousel.querySelectorAll(".item");
